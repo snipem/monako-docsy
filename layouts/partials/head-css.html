@@ -1,2 +1,2 @@
- {{ $scssMain := "css/main.css"}} {{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
+ {{ $scssMain := "css/main.css"}} {{ $css := resources.Get $scssMain}}
 <link href="{{ $css.RelPermalink }}" rel="stylesheet">
